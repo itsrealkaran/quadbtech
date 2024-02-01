@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: 'Hind', sans-serif;
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 2rem;
+}
+
+header{
+  background-color: #fcfcfc;
+  padding: 0 1rem;
+  border-bottom: 0.1rem solid #90b090;
+}
+
+header h2{
+  margin: 0.3rem 0;
+  align-self: center;
+  color: #90c090;
+}
+
+.show-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.show-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.show-card:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+  .show-card {
+    flex-direction: column;  }
+}
+
+.show-card img {
+  flex: 1;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+}
+
+.show-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 4;
+  gap: 0.5rem;
+  padding: 20px;
+}
+
+.show-card h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.show-card p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.button {
+  background-color: #9db546;
+  color: #eee;
+  border: none;
+  align-self: flex-start;
+  padding: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #829638;
+}
+
+.show-summary {
+  margin: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.show-summary img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.show-summary-content {
+  padding: 2rem;
+}
+
+.show-summary h1 {
+  color: #333;
+  text-decoration: none;
+}
+
+.show-summary p {
+  color: #666;
+  line-height: 1.5;
+}
